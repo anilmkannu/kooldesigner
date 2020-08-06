@@ -1,0 +1,13 @@
+@mixin displayrow {
+    display: flex;
+    flex-direction: row;
+}
+@mixin displaycol {
+    display: flex;
+    flex-direction: column;
+}
+@mixin borderradius($radius) {
+	border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+}

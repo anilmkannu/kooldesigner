@@ -1,0 +1,250 @@
+@import 'variables';
+@import 'mixin';
+
+body{background: url("../images/pattern.png") repeat center;}
+.wrapper {
+    width:1090px;  margin:60px auto 0 auto;  @include displaycol; 
+header {
+    align-items: center;
+    section {
+        @include displayrow;
+        align-items: center;
+        nav{
+           
+              
+           a {
+            color: $blackcolor;
+            padding-left:33px ;
+            font-size:22px; 
+            font-family: 'Roboto Slab', serif;
+
+           }
+           .overlay {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            transition: opacity 500ms;
+            visibility: hidden;
+            opacity: 0;
+          }
+          .overlay:target {
+            visibility: visible;
+            opacity: 1;
+            z-index: 999;
+          }
+        .kooltouchpopup {
+            margin:150px auto;
+            padding: 20px;
+            background: #fff;
+            @include borderradius (10px);
+            width:450px;
+            position: relative;
+            border: 5px solid $redcolor;
+            font-size:20px; 
+            @include displaycol();
+            justify-content: center;
+            align-items: center;
+            h2 {
+                color: $redcolor;
+                font-family: 'Roboto Slab', serif;
+               
+              }
+              .close {
+                font-size:20px;
+                text-decoration: none;
+                color: $whitecolor;
+                @include borderradius (30px);
+                background: $redcolor;
+                width: 100px;
+                padding:5px 0 ;
+                text-align: center;
+                margin-top:20px;
+                &:hover {
+                     background: $redcolor;
+                     opacity: 0.8;
+                    color: $whitecolor;
+                }
+              }
+              
+          }
+
+          .koolskillspopup {
+            margin:150px auto;
+            padding:20px 20px 20px 20px;
+            background: #fff;
+            @include borderradius (10px);
+            width:850px;
+            position: relative;
+            border: 5px solid $pinkcolor;
+            font-size:20px; 
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            font-family: 'Roboto Slab', serif;
+            flex-direction: row;
+            .skillsmain {
+            @include displaycol();
+            width:45%;
+            h1 {
+                color: $blackcolor;
+                font-family: 'Roboto Slab', serif;
+                margin: 0px;
+                font-size:13px; 
+               
+              }
+                .skillswrap {
+                    width:100%;
+                    background: #f1f1f1;
+                    height: 25px;
+                    line-height: 25px;
+                    margin:10px 5px 10px 0;
+                    @include borderradius (5px);
+
+                   
+                    
+                    
+                    .ux {
+                       font-size: 16px;
+                        color: #ffffff;
+                        padding:0 5px;
+                        height: 25px;
+                        line-height: 25px;
+                        @include borderradius (5px 0 0 5px);
+                    }
+                    .pink {
+                        background: $pinkcolor;
+                    }
+                    .green {
+                        background: $greencolor;
+                    }
+                    .yellow {
+                        background: $yellowcolor;
+                    }
+                    .red {
+                        background: $redcolor;
+                    }
+                    .blue {
+                        background: $bluecolor;
+                    }
+                    .purple {
+                        background: $purplecolor;
+                    }
+                    .other {
+                        background: $graycolor;
+                    }
+                }
+            }
+            h2 {
+                color: $pinkcolor;
+                font-family: 'Roboto Slab', serif;
+                width:100% ;
+                text-align: center;
+                margin: 0px 0 10px 0;
+               
+              }
+              .close {
+                font-size:20px;
+                text-decoration: none;
+                color: $whitecolor;
+                @include borderradius (30px);
+                background: $pinkcolor;
+                width: 100px;
+                padding:5px 0 ;
+                text-align: center;
+                margin-top:20px;
+                &:hover {
+                     background: $pinkcolor;
+                     opacity: 0.8;
+                    color: $whitecolor;
+                }
+              }
+              
+          }
+          
+        
+           a.page {
+               color: $greencolor;
+               text-decoration-color: $greencolor;
+           }
+           a.port {
+            color: $yellowcolor;
+            text-decoration-color: $yellowcolor;
+        }
+           a.skills {
+            color: $pinkcolor;
+            text-decoration-color: $pinkcolor;
+        }
+           a.touch {
+            color: $redcolor;
+            text-decoration-color: $redcolor;
+           
+        }
+          
+            .hello{
+            font-size: 70px;
+            color:$blackcolor;
+            font-family: 'Great Vibes', cursive;  
+            margin-bottom:20px ;  
+                }
+        }
+    }
+}
+.content {
+    @include displayrow; 
+    background: $whitecolor;
+    position: relative;
+    font-family: 'Roboto Slab', serif;
+    margin-left:20px ;
+    .kool-port {
+        position: absolute;
+        transform: rotate(270deg);
+        left: -100px;
+        top: 141px;
+       
+        span {
+            background: $blackcolor;
+            color: $yellowcolor;
+            font-weight: lighter;
+            padding:0 7px;
+            margin-right:5px ;
+        }
+    }
+   
+    figure {
+        width:440px;
+        margin: 0 5px 0 0;
+        .mySlides {display:none;}
+    }
+    aside {
+        h1 {
+            font-size:40px; 
+            margin:20px 0;
+           span {
+           
+            background: $blackcolor;
+            color: $yellowcolor;
+            font-weight: lighter;
+           }
+        }
+        .list {
+           column-count: 3;
+           column-width: 195px;
+            p {
+                font-family: 'Roboto Slab', serif;
+                font-size:12px; 
+                margin:0 0 15px 0;
+            }
+        }
+    }
+}
+footer {
+    @include displayrow();
+    justify-content: flex-end;
+    margin: 10px;
+    color: #2dc8f8;
+}
+
+}

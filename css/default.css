@@ -1,0 +1,343 @@
+body {
+  background: url("../images/pattern.png") repeat center;
+}
+
+.wrapper {
+  width: 1090px;
+  margin: 60px auto 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper header {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper header section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper header section nav a {
+  color: #000000;
+  padding-left: 33px;
+  font-size: 22px;
+  font-family: 'Roboto Slab', serif;
+}
+
+.wrapper header section nav .overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  -webkit-transition: opacity 500ms;
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.wrapper header section nav .overlay:target {
+  visibility: visible;
+  opacity: 1;
+  z-index: 999;
+}
+
+.wrapper header section nav .kooltouchpopup {
+  margin: 150px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  width: 450px;
+  position: relative;
+  border: 5px solid #ef5a2f;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper header section nav .kooltouchpopup h2 {
+  color: #ef5a2f;
+  font-family: 'Roboto Slab', serif;
+}
+
+.wrapper header section nav .kooltouchpopup .close {
+  font-size: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  background: #ef5a2f;
+  width: 100px;
+  padding: 5px 0;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.wrapper header section nav .kooltouchpopup .close:hover {
+  background: #ef5a2f;
+  opacity: 0.8;
+  color: #ffffff;
+}
+
+.wrapper header section nav .koolskillspopup {
+  margin: 150px auto;
+  padding: 20px 20px 20px 20px;
+  background: #fff;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  width: 850px;
+  position: relative;
+  border: 5px solid #ec008b;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Roboto Slab', serif;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.wrapper header section nav .koolskillspopup .skillsmain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 45%;
+}
+
+.wrapper header section nav .koolskillspopup .skillsmain h1 {
+  color: #000000;
+  font-family: 'Roboto Slab', serif;
+  margin: 0px;
+  font-size: 13px;
+}
+
+.wrapper header section nav .koolskillspopup .skillsmain .skillswrap {
+  width: 100%;
+  background: #f1f1f1;
+  height: 25px;
+  line-height: 25px;
+  margin: 10px 5px 10px 0;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+
+.wrapper header section nav .koolskillspopup .skillsmain .skillswrap .ux {
+  font-size: 16px;
+  color: #ffffff;
+  padding: 0 5px;
+  height: 25px;
+  line-height: 25px;
+  border-radius: 5px 0 0 5px;
+  -webkit-border-radius: 5px 0 0 5px;
+  -moz-border-radius: 5px 0 0 5px;
+}
+
+.wrapper header section nav .koolskillspopup .skillsmain .skillswrap .pink {
+  background: #ec008b;
+}
+
+.wrapper header section nav .koolskillspopup .skillsmain .skillswrap .green {
+  background: #8fc43e;
+}
+
+.wrapper header section nav .koolskillspopup .skillsmain .skillswrap .yellow {
+  background: #fbb11c;
+}
+
+.wrapper header section nav .koolskillspopup .skillsmain .skillswrap .red {
+  background: #ef5a2f;
+}
+
+.wrapper header section nav .koolskillspopup .skillsmain .skillswrap .blue {
+  background: #2F75EF;
+}
+
+.wrapper header section nav .koolskillspopup .skillsmain .skillswrap .purple {
+  background: #682FEF;
+}
+
+.wrapper header section nav .koolskillspopup .skillsmain .skillswrap .other {
+  background: #696363;
+}
+
+.wrapper header section nav .koolskillspopup h2 {
+  color: #ec008b;
+  font-family: 'Roboto Slab', serif;
+  width: 100%;
+  text-align: center;
+  margin: 0px 0 10px 0;
+}
+
+.wrapper header section nav .koolskillspopup .close {
+  font-size: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  background: #ec008b;
+  width: 100px;
+  padding: 5px 0;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.wrapper header section nav .koolskillspopup .close:hover {
+  background: #ec008b;
+  opacity: 0.8;
+  color: #ffffff;
+}
+
+.wrapper header section nav a.page {
+  color: #8fc43e;
+  -webkit-text-decoration-color: #8fc43e;
+          text-decoration-color: #8fc43e;
+}
+
+.wrapper header section nav a.port {
+  color: #fbb11c;
+  -webkit-text-decoration-color: #fbb11c;
+          text-decoration-color: #fbb11c;
+}
+
+.wrapper header section nav a.skills {
+  color: #ec008b;
+  -webkit-text-decoration-color: #ec008b;
+          text-decoration-color: #ec008b;
+}
+
+.wrapper header section nav a.touch {
+  color: #ef5a2f;
+  -webkit-text-decoration-color: #ef5a2f;
+          text-decoration-color: #ef5a2f;
+}
+
+.wrapper header section nav .hello {
+  font-size: 70px;
+  color: #000000;
+  font-family: 'Great Vibes', cursive;
+  margin-bottom: 20px;
+}
+
+.wrapper .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background: #ffffff;
+  position: relative;
+  font-family: 'Roboto Slab', serif;
+  margin-left: 20px;
+}
+
+.wrapper .content .kool-port {
+  position: absolute;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  left: -100px;
+  top: 141px;
+}
+
+.wrapper .content .kool-port span {
+  background: #000000;
+  color: #fbb11c;
+  font-weight: lighter;
+  padding: 0 7px;
+  margin-right: 5px;
+}
+
+.wrapper .content figure {
+  width: 440px;
+  margin: 0 5px 0 0;
+}
+
+.wrapper .content figure .mySlides {
+  display: none;
+}
+
+.wrapper .content aside h1 {
+  font-size: 40px;
+  margin: 20px 0;
+}
+
+.wrapper .content aside h1 span {
+  background: #000000;
+  color: #fbb11c;
+  font-weight: lighter;
+}
+
+.wrapper .content aside .list {
+  -webkit-column-count: 3;
+          column-count: 3;
+  -webkit-column-width: 195px;
+          column-width: 195px;
+}
+
+.wrapper .content aside .list p {
+  font-family: 'Roboto Slab', serif;
+  font-size: 12px;
+  margin: 0 0 15px 0;
+}
+
+.wrapper footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 10px;
+  color: #2dc8f8;
+}
+/*# sourceMappingURL=default.css.map */
